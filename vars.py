@@ -15,12 +15,13 @@ if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
 
 # ➕ MongoDB config (Render env se aayega)
-MONGO_URI = environ.get("MONGO_URI", "")
-DB_NAME = environ.get("DB_NAME", "Telegrambot")
-COLLECTION_NAME = environ.get("COLLECTION_NAME", "Telegrambot")
+MONGO_URI = environ.get("MONGO_URI", "mongodb+srv://niravpatel180503_db_user:vjWNaWhRk0gMSNyQ@cluster0.26bfgmf.mongodb.net/?appName=Cluster0")
+DB_NAME = environ.get("DB_NAME", "DevThanos")
+COLLECTION_NAME = environ.get("COLLECTION_NAME", "DevThanos")
   
 #WEBHOOK = True  # Don't change this
 #PORT = int(os.environ.get("PORT", 8080))  # Default to 8000 if not set
+
 
 
 
